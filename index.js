@@ -84,7 +84,7 @@ setTimeout(() => {
         const sockOptions = {
             version,
             logger: pino({ level: "silent" }),
-            browser: ['zeze xmd', "safari", "1.0.0"],
+            browser: ['Chuga xmd', "safari", "1.0.0"],
             printQRInTerminal: true,
             fireInitQueries: false,
             shouldSyncHistoryMessage: true,
@@ -174,9 +174,9 @@ if (conf.AUTOREACT_STATUS=== "yes") {
             var origineMessage = ms.key.remoteJid;
             var idBot = decodeJid(zk.user.id);
             var servBot = idBot.split('@')[0];
-            /* const dj='255747397675';
-             const dj2='255747397675';
-             const luffy='255747397675'*/
+            /* const dj='255763111390';
+             const dj2='254751284190';
+             const luffy='254762016957'*/
             /*  var superUser=[servBot,dj,dj2,luffy].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
               var dev =[dj,dj2,luffy].map((t)=>t.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);*/
             const verifGroupe = origineMessage?.endsWith("@g.us");
@@ -196,10 +196,10 @@ if (conf.AUTOREACT_STATUS=== "yes") {
             var membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
-            const dj = '255747397675';
-            const dj2 = '255747397675';
-            const dj3 = "255747397675";
-            const luffy = '255747397675';
+            const dj = '255622286792';
+            const dj2 = '255622286792';
+            const dj3 = "255622286792";
+            const luffy = '255622286792';
             const sudo = await getAllSudoNumbers();
             const superUserNumbers = [servBot, dj, dj2, dj3, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
@@ -207,7 +207,7 @@ if (conf.AUTOREACT_STATUS=== "yes") {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\ZEZE MD is ONLINE");
+            console.log("\CHUGA-MD is ONLINE");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -846,18 +846,18 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ ZEZE XMD is connecting...");
+                console.log("ℹ️ CHUGA XMD is connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ ZEZE XMD- Connected to WhatsApp! ☺️");
+                console.log("✅ CHUGA XMD- Connected to WhatsApp! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("ZEZE XMD is Available 🕸\n\n");
+                console.log("CHUGA XMD is Online 🕸\n\n");
                 //chargement des commandes 
-                console.log("Loading ZEZEV MD Commands ...\n");
+                console.log("Loading CHUGA XMD Commands ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
@@ -888,9 +888,9 @@ zk.ev.on('group-participants.update', async (group) => {
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
 
-                let cmsg =`      ZEZE XMD
+                let cmsg =`      CHUGA XMD
 ╭─────────────━┈⊷ 
-│🌏 ZEZE-XMD CONNECTED
+│🌏 CHUGA-XMD CONNECTED
 │💫 ᴘʀᴇғɪx: *[ ${prefixe} ]*
 │⭕ ᴍᴏᴅᴇ: *${md}*
 ╰─────────────━┈⊷⁠⁠⁠⁠`;
